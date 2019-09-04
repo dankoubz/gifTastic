@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>GiphyNator</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+
+            <!-- Heading + Nav -->
+            <nav class="col-12 mt-5 navbar">
+                <div class="col-md-12 col-lg-4 d-flex align-items-center" height="100px">
+                    <img src="assets/imgs/giphy.gif" width="90" height="90" class="d-inline-block text-center" alt="">
+                    <h1 class="d-inline-block pl-2 text-center">GiphyNator</h1>
+                </div>
+                <div class="col-md-12 col-lg-8 d-flex justify-content-end align-items-center" height="100px">
+                    <form class="col-12 form-inline mx-auto">
+                        <input id="userInput" class="flex-grow-1 search" type="search" placeholder="Add a topic!" aria-label="Search">
+                        <button id="addTopic" class="btn-add ml-2" type="submit">Add Gif</button>
+                    </form>
+                </div>
+            </nav>
+
+            <!-- Buttons Lot's of Buttons Here -->
+            <section class="col-12 mt-5">
+                <div class="row">
+                    <header class="col-12">
+                        <h4 class="mb-1">GIF Topics</h4>
+                        <hr class="mb-4">
+                    </header>
+                    <main id="topicsBtn" class="d-flex mx-auto justify-content-center flex-wrap"></main>
+                </div>
+            </section>
+
+
+            <!-- Add All Da Gifs Here! -->
+            <section class="col-12 mt-5">
+                <div class="row">
+                    <header class="col-12">
+                        <h4 class="mb-1">Gifs <span>(Hover To Play)</span></h4>
+                        <hr class="mb-4">
+                    </header>
+                    <main id="displayGifs" class="d-flex mx-auto justify-content-center flex-wrap"></main>
+                </div>
+            </section>
+        </div>
+    </div>
+
+
+
+    <!-- Optional JavaScript -->
+    <script src="assets/app.js "></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js " integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1 " crossorigin="anonymous "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js " integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM " crossorigin="anonymous "></script>
+</body>
+
+</html>

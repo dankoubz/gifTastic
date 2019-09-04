@@ -1,0 +1,159 @@
+body {
+    background: #1a1a1a;
+    color: white;
+}
+
+
+/* Text + Fonts */
+
+h1 {
+    color: aquamarine;
+}
+
+h4 span {
+    font-size: .8em;
+    color: #5a5a5a;
+}
+
+hr {
+    border: 1px #3a3a3a solid;
+}
+
+a:link,
+a:visited,
+a:hover {
+    text-decoration: none;
+    color: #1a1a1a;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+
+/* Search Bar */
+
+.form-inline,
+.search {
+    height: 55px !important;
+}
+
+.search {
+    background: #1a1a1a;
+    color: white;
+    border-radius: 10px;
+    padding: 0 20px 0 20px;
+    border: 1.5px #5a5a5a solid;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+    border: 1px aquamarine solid;
+    -webkit-text-fill-color: aquamarine;
+    background: #1a1a1a;
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+    color: aquamarine;
+    border: 1px aquamarine solid;
+    background: #1a1a1a;
+}
+
+button {
+    background: #1a1a1a;
+    border-radius: 10px;
+    transition: .2s ease-in-out;
+    height: 55px;
+    line-height: 1.2em;
+    padding: 0 20px 0 20px;
+}
+
+button.btn-add {
+    border: 1px aquamarine solid;
+    color: aquamarine;
+}
+
+button.btn-gif {
+    border: 1px white solid;
+    color: white;
+}
+
+button.btn-download {
+    padding: 0 30px;
+    font-size: .8em;
+    color: #1a1a1a;
+    background: white;
+    height: 35px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    border: none;
+}
+
+button:hover {
+    color: #1a1a1a;
+    background: aquamarine;
+    border: 1px aquamarine solid;
+    line-height: 1.2em;
+    transform: scale(1.05);
+}
+
+.rounded {
+    border-radius: 10px !important;
+}
+
+.border {
+    border: 1.5px solid #5a5a5a !important;
+    box-shadow: -5px 5px 10px #121212;
+}
+
+img.gif {
+    max-width: auto;
+    max-height: 200px;
+    transition: .5s ease;
+    box-shadow: -5px 5px 10px #121212;
+    z-index: 1;
+    position: relative;
+}
+
+img.gif:hover {
+    transform: scale(1.1);
+}
+
+#gifContainer {
+    display: inline-block;
+    height: 350px;
+    width: 350px;
+}
+
+div.gifBar {
+    position: absolute;
+    z-index: 0;
+    height: 100px;
+    top: 0;
+    left: 0;
+}
+
+
+/* Media Queries */
+
+@media only screen and (max-width: 768px) {
+    .search {
+        margin-top: 20px;
+    }
+    button.btn-add {
+        display: none;
+    }
+    section header {
+        text-align: center;
+        padding: 0;
+    }
+}
